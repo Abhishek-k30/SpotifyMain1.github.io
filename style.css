@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+ 
+ 
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    opacity: 2;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+ 
+ 
+ 
+.background{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+     
+    /* min-height: 80vh; */
+    min-height:700px ;  
+    bottom: 0;  
+
+}
+.background::before{
+content: "";
+position: absolute;
+background: url('p7.avif') no-repeat center center/cover;
+height: 100vh;
+width: 100vw;
+z-index: -1; 
+}
+.h1{
+    color: rgb(249, 247, 244);
+    font-size: 2.8rem;
+    font-family: 'Varela Round', sans-serif;
+    opacity: 15;
+      
+      
+} 
+.p1{
+    color: white;
+     font-size: 3.8rem;
+     font-family: 'Varela Round', sans-serif;
+     opacity: 15;
+
+}
+.box1{
+    display: flex;
+      
+    align-items: center;
+    justify-content: center;
+    opacity: 15;
+}
+
+ 
+ .box3{
+    display: flex;
+    height: 6vh;
+    width:  30vw;
+    background-color: pink;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+     
+ }
+ .h3{
+
+    text-decoration: none;
+    
+    
+ }
+ .moods{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+ .bottom{
+    position: sticky;
+    bottom: 0;
+    height: 90px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+ 
+}
+
+.icons{
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+.buttoncls{
+    position:  sticky;
+}
+.mydata{
+    background-color : black;
+    
+}
+.mydata p{
+    color: white;
+    text-decoration: none;
+}
+.mydata p a{
+    text-decoration: none;
+    color: white;
+}
+
+ 
+@media screen and (max-width: 600px){
+    .background::before{
+        content: "";
+        position: absolute;
+        background: url('p3.jpeg') no-repeat center center/cover;
+        height: 100vh;
+        width: 100vw;
+        z-index: -1; 
+        }
+
+        .h1{
+            font-size: 1.8rem;
+            opacity: 15;
+        }
+        .p1{
+            font-size: 2rem;
+            opacity: 15;
+        }
+        .box3{
+            display: flex;
+            height: 8vh;
+            width:  50vw;
+            background-color: pink;
+            border-radius: 30px;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+        }
+
+}
+ 
+ 
